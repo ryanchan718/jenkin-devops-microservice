@@ -40,5 +40,4 @@ pipeline{
 				echo "Failed to work"
 			}
 		}
-	}
 }
