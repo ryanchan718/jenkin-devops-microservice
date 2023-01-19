@@ -62,7 +62,7 @@ pipeline {
 		stage('Push Docker Image') {
 			steps {
 				script {
-					docker.withRegistry('', 'kiwi-zone') {
+					docker.withRegistry('', 'kiwizone-u') {
 						dockerImage.push();
 						dockerImage.push('latest');
 					}
