@@ -28,5 +28,16 @@ pipeline{
 				echo "Integration Test"
 			}
 		}
+	} post {
+			always{
+				echo "Working"
+			}
+			success{
+				echo "Success Working"
+			}
+			failure{
+				echo "Failed to work"
+			}
+		}
 	}
 }
